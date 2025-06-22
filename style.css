@@ -1,100 +1,78 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hilary Wunderlich Boz - Advogada</title>
-  <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Open+Sans&display=swap" rel="stylesheet">
-</head>
-<body>
-  <!-- TOPO -->
-  <header>
-    <div class="container">
-      <img src="logo.png" alt="Logo Hilary" class="logo">
-      <nav>
-        <ul>
-          <li><a href="#inicio">Início</a></li>
-          <li><a href="#sobre">Sobre</a></li>
-          <li><a href="#servicos">Serviços</a></li>
-          <li><a href="#blog">Blog</a></li>
-          <li><a href="#contato">Contato</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+/* Fonte refinada e aparência leve */
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: #fefaf6;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
 
-  <!-- HERO -->
-  <section id="inicio" class="hero">
-    <div class="container">
-      <h1>Segurança jurídica para sua tranquilidade</h1>
-      <p>Advocacia especializada em Direito Previdenciário, Trabalhista e Sucessório</p>
-      <a href="#contato" class="btn">Agende uma consulta</a>
-    </div>
-  </section>
+/* Cabeçalhos com elegância */
+h1, h2, h3 {
+  font-family: 'Playfair Display', serif;
+  color: #2e2e2e;
+  margin-bottom: 15px;
+}
 
-  <!-- SOBRE -->
-  <section id="sobre" class="sobre">
-    <div class="container">
-      <img src="hilary.jpg" alt="Hilary" class="foto">
-      <div>
-        <h2>Sobre mim</h2>
-        <p>Sou Hilary Wunderlich Boz, advogada especializada em Direito Previdenciário, Trabalhista e Sucessório, com mais de 6 anos de experiência. Atuo com ética, empatia e firmeza, buscando sempre justiça e resultados reais para meus clientes.</p>
-      </div>
-    </div>
-  </section>
+/* Links */
+a {
+  color: #5a3d2b;
+  text-decoration: none;
+}
 
-  <!-- SERVIÇOS -->
-  <section id="servicos" class="servicos">
-    <div class="container">
-      <h2>Serviços</h2>
-      <ul>
-        <li>Planejamento Previdenciário</li>
-        <li>Mandado de Segurança contra demora do INSS</li>
-        <li>Consultas Jurídicas</li>
-        <li>Pedidos de Aposentadoria</li>
-        <li>Inventários e Holdings</li>
-        <li>Direito Trabalhista (CLT e servidores públicos)</li>
-      </ul>
-    </div>
-  </section>
+a:hover {
+  text-decoration: underline;
+}
 
-  <!-- BLOG -->
-  <section id="blog" class="blog">
-    <div class="container">
-      <h2>Blog</h2>
-      <p>Confira meus artigos explicando temas relevantes para sua segurança jurídica.</p>
-      <div class="posts">
-        <div class="post">
-          <h3>Você pode exigir resposta do INSS?</h3>
-          <p>Entenda o que é o Mandado de Segurança e como ele pode acelerar o seu processo previdenciário.</p>
-          <a href="#">Leia mais</a>
-        </div>
-        <!-- Outros posts virão aqui -->
-      </div>
-    </div>
-  </section>
+/* Botão principal */
+.btn {
+  background-color: #5a3d2b;
+  color: #fff;
+  padding: 12px 24px;
+  border-radius: 5px;
+  font-weight: bold;
+  display: inline-block;
+  margin-top: 15px;
+}
 
-  <!-- CONTATO -->
-  <section id="contato" class="contato">
-    <div class="container">
-      <h2>Fale comigo</h2>
-      <p>Entre em contato pelo WhatsApp ou preencha o formulário abaixo:</p>
-      <a href="https://wa.me/SEUNUMERO" class="btn">Fale pelo WhatsApp</a>
-      <form>
-        <input type="text" placeholder="Seu nome" required>
-        <input type="email" placeholder="Seu e-mail" required>
-        <textarea placeholder="Como posso te ajudar?" required></textarea>
-        <button type="submit">Enviar</button>
-      </form>
-    </div>
-  </section>
+/* Containers */
+.container {
+  width: 90%;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
 
-  <!-- RODAPÉ -->
-  <footer>
-    <div class="container">
-      <p>&copy; 2025 Hilary Wunderlich Boz - OAB/MS XXXXX</p>
-    </div>
-  </footer>
-</body>
-</html>
+/* Header fixo */
+header {
+  background-color: #fff;
+  border-bottom: 1px solid #eaeaea;
+  padding: 20px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  height: 50px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+}
+
+nav a {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+/* HERO */
+.hero {
+  text-align: center;
+  background-color:
