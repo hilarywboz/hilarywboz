@@ -1,22 +1,20 @@
-/* TOPO ESTILO INSTITUCIONAL */
+/* TOPO ESTILO INSTITUCIONAL AJUSTADO */
 .topo {
   background-color: #000;
-  padding: 20px 60px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 80px; 
-  
+  padding: 0;
+}
+
 .container-topo {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 20px;
-  display: right;
+  display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 10px 30px;
+  height: 100px;
 }
 
-.logo {
+.logo-topo {
   max-height: 80px;
   width: auto;
 }
@@ -32,7 +30,8 @@
 .menu a {
   color: #fff;
   font-weight: 600;
-  font-size: 15px;
+  font-size: 16px;
+  text-decoration: none;
   transition: color 0.3s ease;
 }
 
@@ -42,36 +41,23 @@
 
 .whatsapp-btn {
   display: flex;
-  align-items: left;
+  align-items: center;
   background-color: white;
-  color: #000;
-  border-radius: 25px;
+  color: black;
+  border-radius: 30px;
   padding: 8px 16px;
   font-weight: bold;
   font-size: 14px;
   gap: 10px;
   text-decoration: none;
-  transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-.whatsapp-btn {
-  display: flex;
-  align-items: left;
-  background-color: white;
-  color: black;
-  border-radius: 30px;
-  padding: 8px 20px;
-  font-weight: bold;
-  font-size: 14px;
-  gap: 10px;
-  text-decoration: none;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .whatsapp-btn img {
-  width: 22px;
-  height: 22px;
+  width: 20px;
+  height: 20px;
+  transition: filter 0.3s ease;
 }
 
 .whatsapp-btn:hover {
@@ -80,5 +66,5 @@
 }
 
 .whatsapp-btn:hover img {
-  filter: brightness(0) invert(1); /* ícone branco no hover */
+  filter: brightness(0) invert(1); /* deixa o ícone branco */
 }
