@@ -27,15 +27,23 @@
 </header>
   
   <!-- SOBRE -->
-  <section id="sobre" class="sobre">
-    <div class="container">
-      <img src="WhatsApp Image 2025-06-22 at 12.07.42.jpeg" alt="Hilary" class="foto">
-      <div>
-        <h2>Sobre mim</h2>
-        <p>Sou Hilary Wunderlich Boz, advogada especializada em Direito Previdenciário, Trabalhista e Sucessório, com mais de 6 anos de experiência. Atuo com ética, empatia e firmeza, buscando sempre justiça e resultados reais para meus clientes.</p>
-      </div>
+     <section id="sobre" class="sobre">
+  <div class="sobre-container">
+    <div class="carrossel">
+      <img src="Hilly1.jpeg" alt="Hilary 1" class="slide active">
+      <img src="Hilly2.jpeg" alt="Hilary 1" class="slide active">
+      <img src="Hilly3.jpeg" alt="Hilary 1" class="slide active">
+      <img src="Hilly4.jpeg" alt="Hilary 1" class="slide active">
+      <img src="Hilly5.jpeg" alt="Hilary 1" class="slide active">
+      <!-- Adicione quantas quiser -->
     </div>
-  </section>
+    <div class="sobre-texto">
+      <h2><span class="dourado">Quem é a Dra.</span> Hilary Wunderlich Boz</h2>
+      <p> Sou advogada nas áreas do Direito Previdenciário, Trabalhista e Sucessório. Meu interesse por leis e justiça começou cedo. Aos 14 anos, fui vereadora-mirim na Câmara Municipal de Campo Grande/MS (2011-2012), colaborando com projetos de lei (na área ambiental) e sugestões de melhorias para a cidade. Formei-me em Direito (2014–2018), especializei-me em Direito Processual Civil (2019–2021) e Direito Previdenciário (2020–2022). Minha paixão pelo Direito Previdenciário surgiu logo após a graduação, em 2019, quando atuei como voluntária na Defensoria Pública da União, lidando diariamente com casos da área. No fim do mesmo ano, já estava advogando — 100% focada nessa especialidade que se tornou minha missão. Ao longo desses anos, tive a honra de colaborar na elaboração de legislações previdenciárias municipais após a Reforma da Previdência e me especializei em encontrar soluções para problemas complexos nas áreas previdenciária e trabalhista, tanto para servidores públicos quanto para trabalhadores celetistas. Como também sempre fui apaixonada por economia e investimentos, uma das minhas maiores realizações profissionais é atuar de forma preventiva, elaborando Planejamentos Previdenciários, Sucessórios e Inventários, ajudando meus clientes a se organizarem com inteligência e segurança. Em março de 2021, abri meu próprio escritório — a melhor decisão da minha vida profissional até agora. Em menos de quatro anos, já ajudei mais de 200 pessoas a conquistarem seus direitos e planejarem o futuro com tranquilidade. Atualmente, atuo como Juíza Leiga no Estado de Mato Grosso do Sul, auxiliando no julgamento de pequenas causas nas áreas Cível e Consumerista. Paralelamente, estou expandindo meu escritório, que agora passará a funcionar como empresa digital com atuação nacional, equipe qualificada e foco em transformar a forma como as pessoas se relacionam com o Direito. 🖤♟️
+      </p>
+    </div>
+  </div>
+</section>
   
   <!-- SERVIÇOS -->
   <section id="servicos" class="servicos">
@@ -82,12 +90,21 @@
       </form>
     </div>
   </section>
-
   <!-- RODAPÉ -->
   <footer>
     <div class="container">
-      <p>&copy; 2025 Hilary Wunderlich Boz - OAB/MS XXXXX</p>
+      <p>&copy; 2025 Hilary Wunderlich Boz - OAB/MS 24.631</p>
     </div>
   </footer>
+  <script>
+  const slides = document.querySelectorAll('.carrossel .slide');
+  let index = 0;
+
+    setInterval(() => {
+    slides[index].classList.remove('active');
+    index = (index + 1) % slides.length;
+    slides[index].classList.add('active');
+  }, 1000); // 1000ms = 1 segundo
+</script>
 </body>
 </html>
