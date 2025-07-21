@@ -189,3 +189,52 @@
   font-size: 18px;
   line-height: 1.6;
 }
+
+/* SERVIÇOS – NOVO ESTILO */
+.servicos {
+  background-color: #f7f1e3; /* bege claro puxado pro dourado claro */
+  padding: 60px 20px;
+}
+
+.titulo-servicos {
+  text-align: center;
+  font-size: 32px;
+  color: #000;
+  margin-bottom: 40px;
+}
+
+.container-servicos {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.cards-servicos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.card-servico {
+  background-color: #000;
+  border-radius: 20px;
+  padding: 30px;
+  color: white;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease;
+}
+
+.card-servico:hover {
+  transform: translateY(-5px);
+}
+
+.card-servico h3 {
+  font-size: 20px;
+  margin-bottom: 15px;
+  color: #fff;
+}
+
+.card-servico p {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #e0e0e0;
+}
