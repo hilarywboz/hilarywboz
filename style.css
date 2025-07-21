@@ -128,3 +128,39 @@
   line-height: 1.6;
   color: #444;
 }
+
+#sobre {
+  background-image: url('fundo-marmore.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 60px 20px;
+  color: #000; /* Ajuste conforme contraste da imagem */
+}
+
+#sobre .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap;
+  background-color: rgba(255, 255, 255, 0.85); /* Leve transparência branca para facilitar leitura */
+  padding: 30px;
+  border-radius: 10px;
+}
+
+#sobre .foto {
+  max-width: 400px;
+  border-radius: 10px;
+}
+
+#sobre h2 {
+  font-size: 32px;
+  color: #d4af37;
+  margin-bottom: 20px;
+}
+
+#sobre p {
+  font-size: 18px;
+  line-height: 1.6;
+}
