@@ -96,7 +96,6 @@
 }
 
 .sobre {
-  background-color: #fff;
   padding: 60px 20px;
 }
 
@@ -156,7 +155,7 @@
 }
 
 #sobre {
-  background-image: url('fundo-marmore.jpg');
+  background-image: url(fundo-marmore.jpeg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
