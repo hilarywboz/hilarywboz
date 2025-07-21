@@ -155,7 +155,7 @@
 }
 
 #sobre {
-  background-image: url(fundo-marmore.jpeg);
+  background-image: url('fundo-marmore.jpeg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
